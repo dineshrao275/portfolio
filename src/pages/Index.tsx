@@ -66,7 +66,7 @@ const Index = () => {
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <a href="/" className="text-2xl font-bold text-portfolio-purple">
-            Dinesh<span className="text-portfolio-blue">.dev</span>
+            Dinesh<span className="text-portfolio-blue"> Portfolio</span>
           </a>
           <nav className="hidden md:flex space-x-1">
             <button
@@ -731,7 +731,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-4 md:mb-0">
               <span className="text-xl font-bold">
-                Dinesh<span className="text-portfolio-purple">.dev</span>
+                Dinesh<span className="text-portfolio-purple"> Portfolio</span>
               </span>
             </div>
             <div className="flex space-x-6">
