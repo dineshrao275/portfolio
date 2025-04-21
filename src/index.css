@@ -141,4 +141,33 @@
       opacity: 0.7;
     }
   }
+
+  .glass {
+    @apply bg-white/60 backdrop-blur-lg shadow-xl border border-white/20 rounded-2xl;
+  }
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(24px) scale(0.98);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  .slide-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideInUp 0.8s cubic-bezier(0.4,0,0.2,1) forwards;
+  }
+  @keyframes slideInUp {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }

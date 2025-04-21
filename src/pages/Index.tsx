@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { Linkedin, Github, Mail, Phone, ArrowDown, ArrowUp, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -50,7 +49,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans">
       {/* Header/Navigation */}
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -121,8 +120,8 @@ const Index = () => {
           id="home"
           className="min-h-screen flex flex-col justify-center relative overflow-hidden"
         >
-          <div className="absolute inset-0 bg-portfolio-lightpurple/30 -z-10" />
-          <div className="container mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
+          <div className="absolute inset-0 bg-gradient-to-br from-portfolio-lightpurple/40 to-white/60 -z-10" />
+          <div className="container mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center fade-in">
             <div className="order-2 md:order-1">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
                 <span className="text-portfolio-darkblue">Hello, I'm </span>
@@ -211,10 +210,8 @@ const Index = () => {
         {/* About Section */}
         <section id="about" className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-portfolio-darkblue">
-              About <span className="text-portfolio-purple">Me</span>
-            </h2>
-            <div className="max-w-3xl mx-auto">
+            <SectionTitle title="About" highlight="Me" />
+            <div className="max-w-3xl mx-auto glass p-8 fade-in">
               <p className="text-gray-700 mb-6 text-lg">
                 I am a Full Stack Developer based in India with a passion for creating efficient, 
                 scalable, and user-friendly web applications. With over 2 years of professional 
@@ -236,11 +233,9 @@ const Index = () => {
         {/* Experience Section */}
         <section id="experience" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-portfolio-darkblue">
-              Work <span className="text-portfolio-purple">Experience</span>
-            </h2>
+            <SectionTitle title="Work" highlight="Experience" />
             <div className="max-w-4xl mx-auto">
-              <div className="relative border-l-2 border-portfolio-purple pl-8 pb-8 ml-4">
+              <div className="relative border-l-2 border-portfolio-purple pl-8 pb-8 ml-4 glass fade-in">
                 <div className="absolute w-4 h-4 bg-portfolio-purple rounded-full -left-[9px] top-0" />
                 <div className="mb-6">
                   <div className="flex flex-wrap items-center justify-between mb-2">
@@ -264,11 +259,9 @@ const Index = () => {
         {/* Education Section */}
         <section id="education" className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-portfolio-darkblue">
-              Education & <span className="text-portfolio-purple">Certifications</span>
-            </h2>
+            <SectionTitle title="Education &" highlight="Certifications" />
             <div className="max-w-4xl mx-auto grid gap-8">
-              <Card className="overflow-hidden">
+              <Card className="overflow-hidden glass fade-in">
                 <CardContent className="p-6">
                   <div className="flex flex-wrap items-center justify-between mb-2">
                     <h3 className="text-xl font-bold text-portfolio-blue">SRM Institute of Science and Technology</h3>
@@ -281,7 +274,7 @@ const Index = () => {
                 </CardContent>
               </Card>
               
-              <Card className="overflow-hidden">
+              <Card className="overflow-hidden glass fade-in">
                 <CardContent className="p-6">
                   <div className="flex flex-wrap items-center justify-between mb-2">
                     <h3 className="text-xl font-bold text-portfolio-blue">Manisha Sahasra University</h3>
@@ -293,7 +286,7 @@ const Index = () => {
                 </CardContent>
               </Card>
               
-              <Card className="overflow-hidden">
+              <Card className="overflow-hidden glass fade-in">
                 <CardContent className="p-6">
                   <div className="flex flex-wrap items-center justify-between mb-2">
                     <h3 className="text-xl font-bold text-portfolio-blue">Certifications</h3>
@@ -319,7 +312,7 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <SectionTitle title="Featured" highlight="Projects" />
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-              <Card className="overflow-hidden">
+              <Card className="overflow-hidden glass fade-in">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-portfolio-blue mb-2">Kiosk Application</h3>
                   <p className="text-gray-500 italic mb-4">Jan 2023 - Apr 2023</p>
@@ -334,7 +327,7 @@ const Index = () => {
                 </CardContent>
               </Card>
               
-              <Card className="overflow-hidden">
+              <Card className="overflow-hidden glass fade-in">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-portfolio-blue mb-2">Drone monitoring</h3>
                   <p className="text-gray-500 italic mb-4">Apr 2022 - Jun 2022</p>
@@ -349,7 +342,7 @@ const Index = () => {
                 </CardContent>
               </Card>
               
-              <Card className="overflow-hidden">
+              <Card className="overflow-hidden glass fade-in">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-portfolio-blue mb-2">OpenAI Copilot AI & Alexa Type design Studio</h3>
                   <p className="text-gray-500 italic mb-4">2023</p>
@@ -364,7 +357,7 @@ const Index = () => {
                 </CardContent>
               </Card>
               
-              <Card className="overflow-hidden">
+              <Card className="overflow-hidden glass fade-in">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-portfolio-blue mb-2">Browser Monitoring</h3>
                   <p className="text-gray-500 italic mb-4">2022</p>
@@ -385,7 +378,7 @@ const Index = () => {
         <section id="skills" className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <SectionTitle title="Technical" highlight="Skills" />
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-4xl mx-auto glass p-8 fade-in">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="text-xl font-bold text-portfolio-blue mb-6">Languages</h3>
@@ -504,7 +497,7 @@ const Index = () => {
             <SectionTitle title="Get In" highlight="Touch" />
             <div className="max-w-3xl mx-auto">
               <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <Card className="overflow-hidden">
+                <Card className="overflow-hidden glass fade-in">
                   <CardContent className="p-6 flex flex-col items-center text-center">
                     <div className="w-12 h-12 flex items-center justify-center rounded-full bg-portfolio-lightpurple mb-4">
                       <Mail className="text-portfolio-purple" size={24} />
@@ -514,7 +507,7 @@ const Index = () => {
                   </CardContent>
                 </Card>
                 
-                <Card className="overflow-hidden">
+                <Card className="overflow-hidden glass fade-in">
                   <CardContent className="p-6 flex flex-col items-center text-center">
                     <div className="w-12 h-12 flex items-center justify-center rounded-full bg-portfolio-lightpurple mb-4">
                       <Linkedin className="text-portfolio-purple" size={24} />
@@ -532,7 +525,7 @@ const Index = () => {
                 </Card>
               </div>
               
-              <Card>
+              <Card className="glass fade-in">
                 <CardContent className="p-6">
                   <form className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
