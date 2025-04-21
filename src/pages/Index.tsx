@@ -1,5 +1,13 @@
 import { useEffect, useState } from "react";
-import { Linkedin, Github, Mail, Phone, ArrowDown, ArrowUp, ExternalLink } from "lucide-react";
+import {
+  Linkedin,
+  Github,
+  Mail,
+  Phone,
+  ArrowDown,
+  ArrowUp,
+  ExternalLink,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -105,9 +113,9 @@ const Index = () => {
             </button>
           </nav>
           <div className="md:hidden">
-            <MobileNav 
-              activeSection={activeSection} 
-              scrollToSection={scrollToSection} 
+            <MobileNav
+              activeSection={activeSection}
+              scrollToSection={scrollToSection}
             />
           </div>
         </div>
@@ -131,8 +139,9 @@ const Index = () => {
                 Full Stack Developer
               </h2>
               <p className="text-gray-700 mb-8 md:text-lg">
-                I am a Full Stack Developer with over 2 years of experience in building web applications.
-                My expertise includes Python, Django, React.js, Vue.js, Node.js, and various databases.
+                I am a Full Stack Developer with over 2 years of experience in
+                building web applications. My expertise includes Laravel(Php
+                Framework), React.js, Node.js, and various databases.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button
@@ -151,7 +160,7 @@ const Index = () => {
               </div>
               <div className="flex space-x-4 mt-8">
                 <a
-                  href="https://linkedin.com/in/"
+                  href="https://www.linkedin.com/in/dinesh-rao-921905199/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-portfolio-blue hover:text-portfolio-blue/80 transition-colors"
@@ -160,7 +169,7 @@ const Index = () => {
                   <span className="sr-only">LinkedIn</span>
                 </a>
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/dineshrao275"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-800 hover:text-gray-600 transition-colors"
@@ -169,14 +178,14 @@ const Index = () => {
                   <span className="sr-only">GitHub</span>
                 </a>
                 <a
-                  href="mailto:contact@example.com"
+                  href="mailto:dineshrao275@gmail.com"
                   className="text-red-500 hover:text-red-400 transition-colors"
                 >
                   <Mail size={24} />
                   <span className="sr-only">Email</span>
                 </a>
                 <a
-                  href="tel:+1234567890"
+                  href="tel:8290667849"
                   className="text-green-600 hover:text-green-500 transition-colors"
                 >
                   <Phone size={24} />
@@ -189,7 +198,7 @@ const Index = () => {
                 <div className="absolute inset-0 rounded-full bg-portfolio-purple/20 animate-pulse" />
                 <div className="absolute inset-2 rounded-full bg-white overflow-hidden">
                   <img
-                    src="/lovable-uploads/0007965a-73e2-4cd1-a801-e78d0ee10acb.png"
+                    src="/uploads/dinesh-rao.jpg"
                     alt="Dinesh Rao"
                     className="w-full h-full object-cover"
                   />
@@ -213,18 +222,25 @@ const Index = () => {
             <SectionTitle title="About" highlight="Me" />
             <div className="max-w-3xl mx-auto glass p-8 fade-in">
               <p className="text-gray-700 mb-6 text-lg">
-                I am a Full Stack Developer based in India with a passion for creating efficient, 
-                scalable, and user-friendly web applications. With over 2 years of professional 
-                experience, I specialize in Python programming and modern web technologies.
+                I’m a Full Stack Developer based in Indore, India, with over 2
+                years of professional experience in building dynamic and
+                responsive web applications. I specialize in both front-end and
+                back-end development, with expertise in technologies like
+                ReactJS, Node.js, Laravel, and MySQL.
               </p>
               <p className="text-gray-700 mb-6 text-lg">
-                My journey in software development began during my education at SRM University, 
-                where I honed my skills in various programming languages and frameworks. I'm constantly 
-                learning and adapting to new technologies to stay at the forefront of web development.
+                Currently working at Sofmen Technologies, I’ve contributed to
+                several real-world projects including Bumble Roofing, Franchisee
+                Management System, and Wallaby Windows & Koala Insulation, where
+                I developed scalable web interfaces, integrated secure RESTful
+                APIs, and optimized backend performance.
               </p>
               <p className="text-gray-700 text-lg">
-                When I'm not coding, I enjoy exploring new technologies, contributing to open-source 
-                projects, and sharing my knowledge with the developer community.
+                I’m passionate about continuous learning, exploring emerging
+                technologies, and solving complex problems with scalable, secure
+                solutions. When I’m not coding, I enjoy contributing to
+                open-source projects and staying active in the developer
+                community.
               </p>
             </div>
           </div>
@@ -239,16 +255,34 @@ const Index = () => {
                 <div className="absolute w-4 h-4 bg-portfolio-purple rounded-full -left-[9px] top-0" />
                 <div className="mb-6">
                   <div className="flex flex-wrap items-center justify-between mb-2">
-                    <h3 className="text-xl font-bold text-portfolio-blue">Full Stack Developer</h3>
-                    <Badge className="bg-portfolio-purple">TRG Global</Badge>
+                    <h3 className="text-xl font-bold text-portfolio-blue">
+                      Full Stack Developer
+                    </h3>
+                    <Badge className="bg-portfolio-purple">
+                      Sofmen Technologies
+                    </Badge>
                   </div>
-                  <p className="text-gray-500 italic mb-4">Apr 2022 - Present</p>
+                  <p className="text-gray-500 italic mb-4">
+                    Mar 2023 - Present
+                  </p>
                   <div className="text-gray-700 space-y-3">
-                    <p>• Developed and maintained efficient, reusable, and reliable code for web applications.</p>
-                    <p>• Collaborated with cross-functional teams to design, develop, and test new features.</p>
-                    <p>• Built responsive user interfaces using modern JavaScript frameworks.</p>
-                    <p>• Implemented server-side logic using Python and Django.</p>
-                    <p>• Worked with databases like PostgreSQL and MongoDB for data storage and retrieval.</p>
+                    <p>
+                      • Developed and maintained efficient, reusable, and
+                      reliable code for web applications.
+                    </p>
+                    <p>
+                      • Collaborated with cross-functional teams to design,
+                      develop, and test new features.
+                    </p>
+                    <p>
+                      • Built responsive user interfaces using modern JavaScript
+                      frameworks.
+                    </p>
+                    <p>• Implemented server-side logic using Laravel.</p>
+                    <p>
+                      • Worked with database like MySQL for data storage and
+                      retrieval.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -264,41 +298,92 @@ const Index = () => {
               <Card className="overflow-hidden glass fade-in">
                 <CardContent className="p-6">
                   <div className="flex flex-wrap items-center justify-between mb-2">
-                    <h3 className="text-xl font-bold text-portfolio-blue">SRM Institute of Science and Technology</h3>
+                    <h3 className="text-xl font-bold text-portfolio-blue">
+                      Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal (M.P.)
+                    </h3>
                   </div>
-                  <p className="text-gray-500 italic mb-4">Bachelor of Technology • Computer Science • 2018 - 2022</p>
+                  <p className="text-gray-500 italic mb-4">
+                    Master of Computer Application • Computer Science • 2021 -
+                    2023
+                  </p>
                   <p className="text-gray-700">
-                    Studied Computer Science with a focus on software development and web technologies.
-                    Participated in various coding competitions and hackathons.
+                    Completed my Master degree with a focus on computer science.
                   </p>
                 </CardContent>
               </Card>
-              
               <Card className="overflow-hidden glass fade-in">
                 <CardContent className="p-6">
                   <div className="flex flex-wrap items-center justify-between mb-2">
-                    <h3 className="text-xl font-bold text-portfolio-blue">Manisha Sahasra University</h3>
+                    <h3 className="text-xl font-bold text-portfolio-blue">
+                      Mohanlal Sukhadia University, Udaipur (Raj.)
+                    </h3>
                   </div>
-                  <p className="text-gray-500 italic mb-4">Pre-University Education • Science • 2016 - 2018</p>
+                  <p className="text-gray-500 italic mb-4">
+                    Bachelor of Computer Application • Computer Science • 2018 -
+                    2021
+                  </p>
                   <p className="text-gray-700">
-                    Completed my pre-university education with a focus on sciences.
+                    Studied Computer Science with a focus on software
+                    development and web technologies.
                   </p>
                 </CardContent>
               </Card>
-              
+
               <Card className="overflow-hidden glass fade-in">
                 <CardContent className="p-6">
                   <div className="flex flex-wrap items-center justify-between mb-2">
-                    <h3 className="text-xl font-bold text-portfolio-blue">Certifications</h3>
+                    <h3 className="text-xl font-bold text-portfolio-blue">
+                      Certifications
+                    </h3>
                   </div>
                   <div className="space-y-4 mt-4">
                     <div>
-                      <h4 className="font-medium text-portfolio-darkblue">AWS Certified Developer - Associate</h4>
-                      <p className="text-gray-500 italic">Oct 2023</p>
+                      <h4 className="font-medium text-portfolio-darkblue">
+                        <a
+                          href="https://drive.google.com/drive/u/0/folders/1dalGJXqyOBlt36fm04wi9w80UZp803Kz"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Python Basics - IIT Bombay
+                        </a>
+                      </h4>
+                      <p className="text-gray-500 italic">May 2022</p>
                     </div>
                     <div>
-                      <h4 className="font-medium text-portfolio-darkblue">Python</h4>
-                      <p className="text-gray-500 italic">Jun 2022</p>
+                      <h4 className="font-medium text-portfolio-darkblue">
+                        <a
+                          href="https://drive.google.com/drive/u/0/folders/1dalGJXqyOBlt36fm04wi9w80UZp803Kz"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          C++ Basics - IIT Bombay
+                        </a>
+                      </h4>
+                      <p className="text-gray-500 italic">jan 2022</p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-portfolio-darkblue">
+                        <a
+                          href="https://drive.google.com/drive/u/0/folders/1dalGJXqyOBlt36fm04wi9w80UZp803Kz"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          C Basics - IIT Bombay
+                        </a>
+                      </h4>
+                      <p className="text-gray-500 italic">jan 2022</p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-portfolio-darkblue">
+                        <a
+                          href="https://drive.google.com/drive/u/0/folders/1dalGJXqyOBlt36fm04wi9w80UZp803Kz"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          ReactJS Full Course – Ypsilon IT Solutions.
+                        </a>
+                      </h4>
+                      <p className="text-gray-500 italic">jan 2022</p>
                     </div>
                   </div>
                 </CardContent>
@@ -314,59 +399,139 @@ const Index = () => {
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
               <Card className="overflow-hidden glass fade-in">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-portfolio-blue mb-2">Kiosk Application</h3>
-                  <p className="text-gray-500 italic mb-4">Jan 2023 - Apr 2023</p>
+                  <h3 className="text-xl font-bold text-portfolio-blue mb-2">
+                    <a
+                      href="http://bumbleroofing.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Bumble Roofing
+                    </a>
+                  </h3>
                   <p className="text-gray-700 mb-4">
-                    A kiosk application providing info of services, menu, etc. in public spaces using Python Flask for backend and Vue.js for the frontend.
+                    I developed the official website for Bumble Roofing using
+                    Laravel, creating a robust and user-friendly platform that
+                    showcases their wide range of roofing services, including
+                    roof replacement, repairs, inspections, and commercial
+                    solutions. The site highlights their 60+ years of combined
+                    experience and over 2,700 successful projects, while
+                    offering seamless features like free quote requests, service
+                    area details, and customer-friendly navigation. Emphasizing
+                    performance, clarity, and scalability, the website supports
+                    Bumble Roofing's mission to deliver reliable, eco-conscious
+                    roofing solutions across the Los Angeles area.
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">Python</Badge>
-                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">Flask</Badge>
-                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">Vue.js</Badge>
+                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">
+                      Laravel
+                    </Badge>
+                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">
+                      Javascript
+                    </Badge>
+                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">
+                      Python
+                    </Badge>
                   </div>
                 </CardContent>
               </Card>
-              
+
               <Card className="overflow-hidden glass fade-in">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-portfolio-blue mb-2">Drone monitoring</h3>
-                  <p className="text-gray-500 italic mb-4">Apr 2022 - Jun 2022</p>
+                  <h3 className="text-xl font-bold text-portfolio-blue mb-2">
+                    Wallaby Windows
+                  </h3>
                   <p className="text-gray-700 mb-4">
-                    Built a real-time monitoring system for drones using Python Django for the backend and React for the frontend.
+                    Wallaby Windows, established in 2021 and headquartered in
+                    Melbourne, Florida, is a window and door replacement company
+                    operating through a network of local franchise partners
+                    across multiple U.S. states. Acquired by Empower Brands in
+                    April 2023, Wallaby offers a variety of premium impact and
+                    non-impact replacement windows and doors, including styles
+                    like awning, casement, sliding, and French doors. The
+                    company emphasizes energy efficiency, expert installation,
+                    and a customer-centric approach, highlighted by their
+                    "No-Pane Guarantee" and White Glove service. Wallaby is
+                    BBB-accredited with high ratings and is known for its
+                    transparent, no-pressure consultations and commitment to
+                    local community needs.
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">Python</Badge>
-                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">Django</Badge>
-                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">React</Badge>
+                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">
+                      Laravel
+                    </Badge>
+                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">
+                      Javascript
+                    </Badge>
                   </div>
                 </CardContent>
               </Card>
-              
+
               <Card className="overflow-hidden glass fade-in">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-portfolio-blue mb-2">OpenAI Copilot AI & Alexa Type design Studio</h3>
+                  <h3 className="text-xl font-bold text-portfolio-blue mb-2">
+                    Koala Insulation
+                  </h3>
+                  <p className="text-gray-700 mb-4">
+                    Koala Insulation is a U.S.-based insulation services company
+                    founded in 2018 and headquartered in Melbourne, Florida.
+                    Operating through a franchise model, it has expanded to over
+                    100 locations across more than 40 states. Koala offers a
+                    comprehensive range of residential and commercial insulation
+                    solutions, including spray foam, blown-in, batt insulation,
+                    air sealing, crawl space encapsulation, insulation removal,
+                    and solar attic fan installations. The company emphasizes
+                    energy efficiency, comfort, and environmental benefits,
+                    noting that proper insulation can reduce energy bills by up
+                    to 15% and improve indoor air quality by minimizing
+                    moisture, mold, and allergens. Koala Insulation provides
+                    free evaluations and highlights potential tax credits of up
+                    to $1,200 under the Inflation Reduction Act for qualifying
+                    insulation upgrades. In April 2023, the company was acquired
+                    by Empower Franchising, aligning it with other home service
+                    brands like Wallaby Windows.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">
+                      Laravel
+                    </Badge>
+                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">
+                      JavaScript
+                    </Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden glass fade-in">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-portfolio-blue mb-2">
+                    Faculty Feedback for Teaching andLearning()
+                  </h3>
                   <p className="text-gray-500 italic mb-4">2023</p>
                   <p className="text-gray-700 mb-4">
-                    Developed a voice assistant integration using AI technologies, similar to Alexa, with custom UX/UI design.
+                    I developed the FFTL (Faculty Feedback on Teaching and
+                    Learning) system for Shri Vaishnav Institute of Management,
+                    Indore (M.P.) to digitize and streamline the process of
+                    collecting student feedback on faculty performance. Built
+                    using Laravel and MySQL, the application provides a secure
+                    and user-friendly interface for students, faculty, and
+                    administrators. It includes role-based access, dynamic
+                    feedback forms, real-time submission, and automated report
+                    generation for performance analysis. The system enhances
+                    transparency, efficiency, and data accuracy in the feedback
+                    process. I also handled deployment on the institute’s
+                    internal server, ensuring smooth access and operation for
+                    all users.
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">Python</Badge>
-                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">JavaScript</Badge>
-                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">AI</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="overflow-hidden glass fade-in">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-portfolio-blue mb-2">Browser Monitoring</h3>
-                  <p className="text-gray-500 italic mb-4">2022</p>
-                  <p className="text-gray-700 mb-4">
-                    Chrome extension for website metrics and user behavior tracking with dashboard visualization.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">JavaScript</Badge>
-                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">Chrome Extensions</Badge>
+                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">
+                      JavaScript
+                    </Badge>
+                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">
+                      Laravel
+                    </Badge>
+                    <Badge className="bg-portfolio-lightblue text-portfolio-blue">
+                      MySQL
+                    </Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -381,11 +546,13 @@ const Index = () => {
             <div className="max-w-4xl mx-auto glass p-8 fade-in">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-xl font-bold text-portfolio-blue mb-6">Languages</h3>
+                  <h3 className="text-xl font-bold text-portfolio-blue mb-6">
+                    Languages
+                  </h3>
                   <div className="space-y-4">
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="font-medium text-gray-700">Python</span>
+                        <span className="font-medium text-gray-700">PHP</span>
                         <span className="text-gray-500">Advanced</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2.5">
@@ -394,7 +561,9 @@ const Index = () => {
                     </div>
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="font-medium text-gray-700">JavaScript</span>
+                        <span className="font-medium text-gray-700">
+                          JavaScript
+                        </span>
                         <span className="text-gray-500">Advanced</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2.5">
@@ -403,7 +572,9 @@ const Index = () => {
                     </div>
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="font-medium text-gray-700">TypeScript</span>
+                        <span className="font-medium text-gray-700">
+                          TypeScript
+                        </span>
                         <span className="text-gray-500">Intermediate</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2.5">
@@ -412,7 +583,9 @@ const Index = () => {
                     </div>
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="font-medium text-gray-700">HTML/CSS</span>
+                        <span className="font-medium text-gray-700">
+                          HTML/CSS
+                        </span>
                         <span className="text-gray-500">Advanced</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2.5">
@@ -421,13 +594,17 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div>
-                  <h3 className="text-xl font-bold text-portfolio-blue mb-6">Frameworks & Technologies</h3>
+                  <h3 className="text-xl font-bold text-portfolio-blue mb-6">
+                    Frameworks & Technologies
+                  </h3>
                   <div className="space-y-4">
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="font-medium text-gray-700">Django</span>
+                        <span className="font-medium text-gray-700">
+                          Laravel
+                        </span>
                         <span className="text-gray-500">Advanced</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2.5">
@@ -436,7 +613,9 @@ const Index = () => {
                     </div>
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="font-medium text-gray-700">React.js</span>
+                        <span className="font-medium text-gray-700">
+                          React.js
+                        </span>
                         <span className="text-gray-500">Advanced</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2.5">
@@ -445,46 +624,59 @@ const Index = () => {
                     </div>
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="font-medium text-gray-700">Node.js</span>
+                        <span className="font-medium text-gray-700">
+                          Node.js
+                        </span>
                         <span className="text-gray-500">Intermediate</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2.5">
                         <div className="bg-portfolio-blue h-2.5 rounded-full w-[75%]"></div>
                       </div>
                     </div>
-                    <div>
-                      <div className="flex justify-between mb-1">
-                        <span className="font-medium text-gray-700">Docker</span>
-                        <span className="text-gray-500">Intermediate</span>
-                      </div>
-                      <div className="w-full bg-gray-200 rounded-full h-2.5">
-                        <div className="bg-portfolio-blue h-2.5 rounded-full w-[70%]"></div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-12">
-                <h3 className="text-xl font-bold text-portfolio-blue mb-6">Other Skills</h3>
+                <h3 className="text-xl font-bold text-portfolio-blue mb-6">
+                  Other Skills
+                </h3>
                 <div className="flex flex-wrap gap-3">
-                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">RESTful APIs</Badge>
-                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">PostgreSQL</Badge>
-                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">MongoDB</Badge>
-                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">Git</Badge>
-                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">AWS</Badge>
-                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">CI/CD</Badge>
-                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">Agile Methodology</Badge>
-                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">Vue.js</Badge>
-                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">Flask</Badge>
-                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">Database Design</Badge>
+                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">
+                    RESTful APIs
+                  </Badge>
+                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">
+                    MySQL
+                  </Badge>
+                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">
+                    Laravel
+                  </Badge>
+                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">
+                    GitHub/GitLab
+                  </Badge>
+                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">
+                    Javascript
+                  </Badge>
+                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">
+                    React Js
+                  </Badge>
+                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">
+                    CodeIgniter
+                  </Badge>                 
+                  <Badge className="bg-portfolio-lightpurple text-portfolio-purple py-2 px-4">
+                    Database Design
+                  </Badge>
                 </div>
               </div>
-              
+
               <div className="mt-12">
-                <h3 className="text-xl font-bold text-portfolio-blue mb-6">Languages</h3>
+                <h3 className="text-xl font-bold text-portfolio-blue mb-6">
+                  Languages
+                </h3>
                 <div className="flex flex-wrap gap-3">
-                  <Badge className="bg-portfolio-lightblue text-portfolio-blue py-2 px-4">English</Badge>
+                  <Badge className="bg-portfolio-lightblue text-portfolio-blue py-2 px-4">
+                    English
+                  </Badge>
                 </div>
               </div>
             </div>
@@ -502,19 +694,23 @@ const Index = () => {
                     <div className="w-12 h-12 flex items-center justify-center rounded-full bg-portfolio-lightpurple mb-4">
                       <Mail className="text-portfolio-purple" size={24} />
                     </div>
-                    <h3 className="text-lg font-bold text-portfolio-blue mb-2">Email</h3>
-                    <p className="text-gray-700">contact@example.com</p>
+                    <h3 className="text-lg font-bold text-portfolio-blue mb-2">
+                      Email
+                    </h3>
+                    <p className="text-gray-700">dineshrao275@gmail.com</p>
                   </CardContent>
                 </Card>
-                
+
                 <Card className="overflow-hidden glass fade-in">
                   <CardContent className="p-6 flex flex-col items-center text-center">
                     <div className="w-12 h-12 flex items-center justify-center rounded-full bg-portfolio-lightpurple mb-4">
                       <Linkedin className="text-portfolio-purple" size={24} />
                     </div>
-                    <h3 className="text-lg font-bold text-portfolio-blue mb-2">LinkedIn</h3>
-                    <a 
-                      href="https://linkedin.com/in/"
+                    <h3 className="text-lg font-bold text-portfolio-blue mb-2">
+                      LinkedIn
+                    </h3>
+                    <a
+                      href="https://www.linkedin.com/in/dinesh-rao-921905199/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-portfolio-purple hover:underline"
@@ -524,13 +720,16 @@ const Index = () => {
                   </CardContent>
                 </Card>
               </div>
-              
+
               <Card className="glass fade-in">
                 <CardContent className="p-6">
                   <form className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                        <label
+                          htmlFor="name"
+                          className="block text-sm font-medium text-gray-700 mb-1"
+                        >
                           Name
                         </label>
                         <input
@@ -541,7 +740,10 @@ const Index = () => {
                         />
                       </div>
                       <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                        <label
+                          htmlFor="email"
+                          className="block text-sm font-medium text-gray-700 mb-1"
+                        >
                           Email
                         </label>
                         <input
@@ -553,7 +755,10 @@ const Index = () => {
                       </div>
                     </div>
                     <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label
+                        htmlFor="subject"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
                         Subject
                       </label>
                       <input
@@ -564,7 +769,10 @@ const Index = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label
+                        htmlFor="message"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
                         Message
                       </label>
                       <textarea
@@ -590,11 +798,13 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-4 md:mb-0">
-              <span className="text-xl font-bold">Dinesh<span className="text-portfolio-purple">.dev</span></span>
+              <span className="text-xl font-bold">
+                Dinesh<span className="text-portfolio-purple">.dev</span>
+              </span>
             </div>
             <div className="flex space-x-6">
               <a
-                href="https://linkedin.com/in/"
+                href="https://www.linkedin.com/in/dinesh-rao-921905199/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-portfolio-purple transition-colors"
@@ -602,7 +812,7 @@ const Index = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://github.com/"
+                href="https://github.com/dineshrao275"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-portfolio-purple transition-colors"
@@ -610,7 +820,7 @@ const Index = () => {
                 <Github size={20} />
               </a>
               <a
-                href="mailto:contact@example.com"
+                href="mailto:dineshrao275@gmail.com"
                 className="hover:text-portfolio-purple transition-colors"
               >
                 <Mail size={20} />
