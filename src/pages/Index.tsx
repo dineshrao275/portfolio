@@ -65,7 +65,7 @@ const Index = () => {
         }`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <a href="#home" className="text-2xl font-bold text-portfolio-purple">
+          <a href="/" className="text-2xl font-bold text-portfolio-purple">
             Dinesh<span className="text-portfolio-blue">.dev</span>
           </a>
           <nav className="hidden md:flex space-x-1">
@@ -720,74 +720,6 @@ const Index = () => {
                   </CardContent>
                 </Card>
               </div>
-
-              <Card className="glass fade-in">
-                <CardContent className="p-6">
-                  <form className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div>
-                        <label
-                          htmlFor="name"
-                          className="block text-sm font-medium text-gray-700 mb-1"
-                        >
-                          Name
-                        </label>
-                        <input
-                          type="text"
-                          id="name"
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-portfolio-purple focus:border-transparent"
-                          placeholder="Your Name"
-                        />
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="email"
-                          className="block text-sm font-medium text-gray-700 mb-1"
-                        >
-                          Email
-                        </label>
-                        <input
-                          type="email"
-                          id="email"
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-portfolio-purple focus:border-transparent"
-                          placeholder="your.email@example.com"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="subject"
-                        className="block text-sm font-medium text-gray-700 mb-1"
-                      >
-                        Subject
-                      </label>
-                      <input
-                        type="text"
-                        id="subject"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-portfolio-purple focus:border-transparent"
-                        placeholder="Subject"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="message"
-                        className="block text-sm font-medium text-gray-700 mb-1"
-                      >
-                        Message
-                      </label>
-                      <textarea
-                        id="message"
-                        rows={4}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-portfolio-purple focus:border-transparent"
-                        placeholder="Your message..."
-                      ></textarea>
-                    </div>
-                    <Button className="w-full md:w-auto bg-portfolio-purple hover:bg-portfolio-purple/90">
-                      Send Message
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </section>
