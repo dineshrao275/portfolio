@@ -17,6 +17,9 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		fontFamily: {
+			sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+		},
 		extend: {
 			colors: {
 				border: 'hsl(var(--border))',
@@ -51,6 +54,15 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				portfolio: {
+					blue: '#0077b5',
+					darkblue: '#1A1F2C',
+					lightblue: '#D3E4FD',
+					purple: '#8B5CF6',
+					lightpurple: '#E5DEFF',
+					gray: '#F6F6F7',
+					darkgray: '#403E43',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
