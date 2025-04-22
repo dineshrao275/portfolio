@@ -13,6 +13,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import MobileNav from "@/components/MobileNav";
 import SectionTitle from "@/components/SectionTitle";
+import image from "@/assets/images/dinesh-rao.jpg";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState<string>("home");
@@ -197,7 +198,7 @@ const Index = () => {
                 <div className="absolute inset-0 rounded-full bg-portfolio-purple/20 animate-pulse" />
                 <div className="absolute inset-2 rounded-full bg-white overflow-hidden">
                   <img
-                    src="/uploads/dinesh-rao.jpg"
+                    src={image}
                     alt="Dinesh Rao"
                     className="w-full h-full object-cover"
                   />
