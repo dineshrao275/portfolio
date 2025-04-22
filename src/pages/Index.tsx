@@ -125,7 +125,7 @@ const Index = () => {
       <main className="pt-16">
         {/* Hero Section */}
         <section
-          id="home"
+          id="home" data-aos="fade-up"
           className="min-h-screen flex flex-col justify-center relative overflow-hidden"
         >
           <div className="absolute inset-0 bg-gradient-to-br from-portfolio-lightpurple/40 to-white/60 -z-10" />
@@ -217,7 +217,7 @@ const Index = () => {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-20 bg-white">
+        <section id="about" data-aos="fade-up" className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <SectionTitle title="About" highlight="Me" />
             <div className="max-w-3xl mx-auto glass p-8 fade-in">
@@ -247,7 +247,7 @@ const Index = () => {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="py-20 bg-gray-50">
+        <section id="experience" data-aos="fade-up" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <SectionTitle title="Work" highlight="Experience" />
             <div className="max-w-4xl mx-auto">
@@ -291,7 +291,7 @@ const Index = () => {
         </section>
 
         {/* Education Section */}
-        <section id="education" className="py-20 bg-white">
+        <section id="education" data-aos="fade-up" className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <SectionTitle title="Education &" highlight="Certifications" />
             <div className="max-w-4xl mx-auto grid gap-8">
@@ -393,7 +393,7 @@ const Index = () => {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-20 bg-gray-50">
+        <section id="projects" data-aos="fade-up" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <SectionTitle title="Featured" highlight="Projects" />
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
@@ -540,7 +540,7 @@ const Index = () => {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="py-20 bg-white">
+        <section id="skills" data-aos="fade-up" className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <SectionTitle title="Technical" highlight="Skills" />
             <div className="max-w-4xl mx-auto glass p-8 fade-in">
@@ -684,7 +684,7 @@ const Index = () => {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-20 bg-portfolio-lightpurple/30">
+        <section id="contact" data-aos="fade-up" className="py-20 bg-portfolio-lightpurple/30">
           <div className="container mx-auto px-4">
             <SectionTitle title="Get In" highlight="Touch" />
             <div className="max-w-3xl mx-auto">
