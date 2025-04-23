@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 
 interface SectionTitleProps {
@@ -6,18 +5,21 @@ interface SectionTitleProps {
   highlight?: string;
   className?: string;
   centered?: boolean;
+  darkMode?: boolean;
 }
 
 const SectionTitle = ({ 
   title, 
   highlight, 
   className,
-  centered = true 
+  centered = true,
+  darkMode = false
 }: SectionTitleProps) => {
   return (
     <h2 className={cn(
-      "text-4xl md:text-5xl font-playfair font-bold mb-12 text-portfolio-darkblue relative",
+      "text-4xl md:text-5xl font-playfair font-bold mb-12 relative",
       centered && "text-center",
+      darkMode ? "text-white" : "text-portfolio-darkblue",
       className
     )}>
       {title}{" "}
