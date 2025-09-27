@@ -1860,7 +1860,7 @@ const Index = () => {
                       </div>
                     </div>
                     <motion.a
-                      href="https://drive.google.com/drive/u/0/folders/1dgg7PZ-nKPnHDkz4rT6WiGHsmHExHUUQ"
+                      href="https://drive.google.com/file/d/1PXS_qaDrbRBNBXtWy1GqppC7E5TX3Cr6/view?usp=sharing"
                       target="_blank"
                       download
                       className="mt-8 inline-flex items-center text-indigo-400 hover:text-indigo-300 transition-colors"
