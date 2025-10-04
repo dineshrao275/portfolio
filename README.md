@@ -27,6 +27,11 @@
     ```bash
     npm run dev
     ```
+5. To deploy it to production
+    ```bash
+    npm run build
+    npm run deploy
+    ```
 
 ## Usage
 
