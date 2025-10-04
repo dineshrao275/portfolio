@@ -1,29 +1,29 @@
-// import { useEffect, useState, useRef } from "react";
-// import {
-//   Linkedin,
-//   Github,
-//   Mail,
-//   Phone,
-//   ArrowDown,
-//   ArrowUp,
-//   ExternalLink,
-//   Moon,
-//   Sun,
-//   Code,
-//   Briefcase,
-//   GraduationCap,
-//   Layers,
-//   Terminal,
-//   UserCircle,
-//   MessageCircle
-// } from "lucide-react";
-// import { Button } from "@/components/ui/button";
-// import { Card, CardContent } from "@/components/ui/card";
-// import { Badge } from "@/components/ui/badge";
-// import MobileNav from "@/components/MobileNav";
-// import SectionTitle from "@/components/SectionTitle";
-// import image from "@/assets/images/dinesh-rao.jpg";
-// import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
+import {
+  Linkedin,
+  Github,
+  Mail,
+  Phone,
+  ArrowDown,
+  ArrowUp,
+  ExternalLink,
+  Moon,
+  Sun,
+  Code,
+  Briefcase,
+  GraduationCap,
+  Layers,
+  Terminal,
+  UserCircle,
+  MessageCircle
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import MobileNav from "@/components/MobileNav";
+import SectionTitle from "@/components/SectionTitle";
+import image from "@/assets/images/dinesh-rao.jpg";
+import { motion, AnimatePresence } from "framer-motion";
 
 // const Index = () => {
 //   const [activeSection, setActiveSection] = useState("home");
