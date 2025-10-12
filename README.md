@@ -1,4 +1,4 @@
-# Portfolio
+# Dinesh Portfolio
 
  This portfolio website is designed to display and highlight your professional achievements, projects, and skills in an elegant and user-friendly manner.
 
