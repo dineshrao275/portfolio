@@ -14,15 +14,10 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/dinesh">
         <Routes>
-          <Route
-            path="/"
-            element={<Navigate to="/dineshportfolio" replace />}
-          />
-          <Route path="/dineshportfolio" element={<PhpPortfolio />} />
-          <Route path="/dinesh-portfolio" element={<PythonPortfolio />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/portfolio" element={<PhpPortfolio />} />
+          <Route path="/profile" element={<PythonPortfolio />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
