@@ -14,10 +14,9 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/dinesh">
+      <BrowserRouter basename="/portfolio">
         <Routes>
-          <Route path="/" element={<Navigate to="/profile" replace />} />
-          <Route path="/portfolio" element={<PhpPortfolio />} />
+          <Route path="/" element={<PhpPortfolio />} />
           <Route path="/profile" element={<PythonPortfolio />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
