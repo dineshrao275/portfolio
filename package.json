@@ -10,7 +10,7 @@
     "build:dev": "vite build --mode production",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build && cp dist/index.html dist/404.html",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -52,6 +52,7 @@
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.40.0",
+    "gh-pages": "^6.3.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.575.0",
     "react": "^19.2.0",
