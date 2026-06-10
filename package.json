@@ -1,6 +1,5 @@
 {
   "name": "portfolio",
-  "homepage": "https://dineshrao275.github.io/portfolio/",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -9,9 +8,7 @@
     "build": "vite build && node scripts/postbuild.mjs",
     "build:dev": "vite build --mode production",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist/client"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
