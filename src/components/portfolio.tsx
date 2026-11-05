@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform, useMotionValue, useSpring, type Variants } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 /* ============ DATA (extracted from resume) ============ */
 const DATA = {
@@ -59,6 +60,30 @@ const DATA = {
     { name: "JavaScript / React", level: 75 },
     { name: "Git / GitHub", level: 88 },
   ],
+  flagship: {
+    name: "FlowSync",
+    tag: "Multi-tenant SaaS · Project Management + HRMS",
+    desc: "A SaaS platform I designed and built end to end: task management (kanban, sprints, time tracking, reports) and a 22-module HRMS (attendance, leave, payroll, performance) on one login. Every customer gets its own PostgreSQL database, with plan-based modules, Stripe and Razorpay billing, a GitHub App integration and an MCP server for AI agents.",
+    tech: ["Laravel 12", "React 19", "PostgreSQL", "Reverb", "Stripe", "Docker", "AWS"],
+    highlights: ["Database-per-tenant isolation", "22 HR modules", "GitHub App + MCP server", "2,500+ automated tests"],
+    live: "http://3.7.184.44/app",
+    screens: [
+      { file: "dashboard", title: "Dashboard" },
+      { file: "kanban-board", title: "Kanban board" },
+      { file: "task-list", title: "List view" },
+      { file: "task-detail", title: "Task detail" },
+      { file: "project-hierarchy", title: "Hierarchy" },
+      { file: "reports", title: "Reports" },
+      { file: "global-search", title: "Global search" },
+      { file: "hr-overview", title: "HR overview" },
+      { file: "hr-employees", title: "Employee directory" },
+      { file: "hr-org-chart", title: "Organisation chart" },
+      { file: "hr-leave", title: "Leave" },
+      { file: "hr-assets", title: "Asset tracking" },
+      { file: "roles-permissions", title: "Roles & permissions" },
+      { file: "subscription", title: "Subscription" },
+    ],
+  },
   projects: [
     {
       name: "Earthpulse AI",
@@ -451,9 +476,70 @@ function Experience() {
 }
 
 /* ============ PROJECTS ============ */
+function FlowSyncShowcase() {
+  const f = DATA.flagship;
+  const [index, setIndex] = useState(1); // opens on the kanban board, the thumbnail on the card
+  const img = (file: string) => `/images/flowsync/${file}.webp`;
+  const move = (d: number) => setIndex((i) => (i + d + f.screens.length) % f.screens.length);
+
+  return (
+    <motion.div variants={reveal} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.15 }}
+      className="glass rounded-3xl p-6 md:p-8 mb-6 grid lg:grid-cols-2 gap-8 items-center relative overflow-hidden">
+      <div className="absolute -top-32 -left-32 h-64 w-64 rounded-full blur-3xl opacity-30" style={{ background: "var(--neon)" }} />
+      <Dialog>
+        <DialogTrigger asChild>
+          <button type="button" aria-label="View FlowSync screenshots"
+            className="relative block rounded-2xl overflow-hidden border border-white/10 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--neon)]">
+            <img src={img("kanban-board")} alt="FlowSync kanban board" width={1600} height={1000} loading="lazy" decoding="async" className="w-full h-auto" />
+            <span className="absolute bottom-3 right-3 text-[11px] font-mono px-3 py-1.5 rounded-full bg-black/70 text-white backdrop-blur">
+              View {f.screens.length} screens →
+            </span>
+          </button>
+        </DialogTrigger>
+        <DialogContent className="max-w-5xl p-4 sm:p-6">
+          <DialogTitle>FlowSync · {f.screens[index].title}</DialogTitle>
+          <DialogDescription className="sr-only">Screenshot {index + 1} of {f.screens.length}</DialogDescription>
+          <img key={f.screens[index].file} src={img(f.screens[index].file)} alt={`FlowSync ${f.screens[index].title}`} width={1600} height={1000} className="w-full h-auto rounded-lg border border-white/10" />
+          <div className="flex items-center justify-between gap-3">
+            <button type="button" onClick={() => move(-1)} className="px-4 py-2 rounded-full border border-white/20 text-sm hover:border-[var(--neon)]">← Prev</button>
+            <span className="text-xs font-mono text-foreground/60">{index + 1} / {f.screens.length}</span>
+            <button type="button" onClick={() => move(1)} className="px-4 py-2 rounded-full border border-white/20 text-sm hover:border-[var(--neon)]">Next →</button>
+          </div>
+        </DialogContent>
+      </Dialog>
+      <div className="relative">
+        <div className="text-[10px] font-mono text-[var(--neon-2)] uppercase mb-2">Featured · {f.tag}</div>
+        <h3 className="text-3xl font-semibold mb-3">{f.name}</h3>
+        <p className="text-sm text-foreground/70 leading-relaxed">{f.desc}</p>
+        <ul className="mt-4 grid sm:grid-cols-2 gap-x-4 gap-y-1.5">
+          {f.highlights.map((h) => (
+            <li key={h} className="text-sm text-foreground/80 flex gap-2"><span className="text-[var(--neon)]">★</span>{h}</li>
+          ))}
+        </ul>
+        <div className="mt-4 flex flex-wrap gap-1.5">
+          {f.tech.map((t) => (
+            <span key={t} className="text-[10px] font-mono px-2 py-0.5 rounded border border-white/15 text-foreground/80">{t}</span>
+          ))}
+        </div>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a href={f.live} target="_blank" rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--neon)] px-5 py-2.5 text-sm font-medium text-primary-foreground neon-glow">
+            Live app <span aria-hidden>↗</span>
+          </a>
+          <a href="#contact" className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2.5 text-sm hover:border-[var(--neon)]">
+            Request a demo
+          </a>
+        </div>
+        <p className="mt-3 text-[11px] font-mono text-foreground/45">Staging deployment · demo access on request · source available on request</p>
+      </div>
+    </motion.div>
+  );
+}
+
 function Projects() {
   return (
     <Section id="projects" eyebrow="04 / WORK" title={<>Selected <span className="text-gradient">projects.</span></>}>
+      <FlowSyncShowcase />
       <div className="grid md:grid-cols-2 gap-6" style={{ perspective: 1200 }}>
         {DATA.projects.map((p, i) => (
           <motion.div key={p.name} variants={reveal} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }} custom={i}>
